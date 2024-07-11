@@ -1,0 +1,8 @@
+package sample_application;
+
+public class NumberTypeExam {
+
+	public static void main(String[] args) {
+		
+	}
+}

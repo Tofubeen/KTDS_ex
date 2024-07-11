@@ -1,0 +1,12 @@
+package sample_application;
+
+public class NumberTypeExam {
+
+	public static void main(String[] args) {
+		
+		byte byteNumber = 10;
+		short shortNumber = 10;
+		int intNumber = 1_000_000_000;
+		long doubleNumber = 1_000_000_000; 
+	}
+}
