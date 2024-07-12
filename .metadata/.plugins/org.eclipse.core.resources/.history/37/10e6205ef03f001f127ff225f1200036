@@ -1,0 +1,14 @@
+package sample_application;
+
+public class IncreaseOperatorExam {
+
+	public static void main(String[] args) {
+		
+		int number1 = 0;
+		number1 = number1 +1; 
+		
+		number1 =0;
+		number1 +=1;
+		
+	}
+}

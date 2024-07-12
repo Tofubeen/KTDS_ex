@@ -1,0 +1,37 @@
+package sample_application;
+
+public class ShortCutOperatorExam {
+
+	public static void main(String[] args) {
+		
+//		알반 산술 연산자 실습
+		int number1 = 10;
+		number1 = number1 + 2;
+		System.out.println(number1);
+		
+		int number3 = 30;
+		number3 +=6;
+		
+		int number4 = 40;
+		number4 -= 10;
+		
+		int number5 = 50;
+		number5 *= 12;
+		
+		int number6 = 10;
+		number6 /= 14;
+		
+		int number7 = 10;
+		number7 %=16;
+		
+		System.out.println(number3);
+		System.out.println(number4);
+		System.out.println(number5);
+		System.out.println(number6);
+		System.out.println(number7);
+		
+		
+//		짧은 표현자 실습
+		
+	}
+}

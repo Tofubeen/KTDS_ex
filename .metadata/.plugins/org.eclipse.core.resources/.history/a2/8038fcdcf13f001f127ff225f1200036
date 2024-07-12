@@ -1,0 +1,8 @@
+package sample_application;
+
+public class DecreseOperatorExam {
+
+	public static void main(String[] args) {
+		
+	}
+}

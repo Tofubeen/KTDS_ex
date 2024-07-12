@@ -1,0 +1,17 @@
+package sample_application;
+
+public class ShortCutOperatorExam {
+
+	public static void main(String[] args) {
+		
+//		알반 산술 연산자 실습
+		int number1 = 10;
+		
+		
+		
+		
+		
+//		짧은 표현자 실습
+		
+	}
+}
