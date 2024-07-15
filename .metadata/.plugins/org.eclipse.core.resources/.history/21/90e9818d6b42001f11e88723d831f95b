@@ -1,0 +1,12 @@
+package sample_application;
+
+public class UpDownGameExam {
+
+	public static void main(String[] args) {
+		
+		System.out.println("업다운게임");
+		
+		double randomFlotingPoint = Math.random(); //부동소수점 형태의 난수 생성
+		
+	}
+}

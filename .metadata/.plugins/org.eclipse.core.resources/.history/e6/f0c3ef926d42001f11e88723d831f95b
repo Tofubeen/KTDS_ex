@@ -1,0 +1,11 @@
+package sample_application;
+
+public class forSyntax {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 
+		 */
+	}
+}

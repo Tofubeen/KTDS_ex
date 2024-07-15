@@ -1,0 +1,11 @@
+package sample_application;
+
+public class VariableScope {
+
+	public static void main(String[] args) {
+		
+		int number = 10;
+		int other = 5;
+		
+	}
+}

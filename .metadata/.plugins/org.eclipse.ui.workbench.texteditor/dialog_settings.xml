@@ -10,6 +10,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="-"/>
 		<list key="findhistory">
+			<item value="^\s*\n"/>
 			<item value="+"/>
 		</list>
 		<list key="replacehistory">

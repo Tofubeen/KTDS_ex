@@ -1,0 +1,18 @@
+package sample_application;
+
+import java.util.Random;
+
+public class UpDownGame {
+
+	public static void main(String[] args) {
+		
+		
+		//슈도콛, (의사코드) - 코드의 논리식을 문자로 나열 
+		//1.랜덤한 숫자 하나를 생성
+		Random ran = new Random();
+		//2 사용자가 숫자를 입력
+		//3. 랜덤한 숫자와 사용자가 입력한 숫자가 같은지 비교
+		//4 랜덤한 숫자가 사용자가 입력한 숫자보다 적은지 비교
+		//5 랜덤한 숫자가 사용자가 입력한 숫자보다 큰지 비교
+	}
+}

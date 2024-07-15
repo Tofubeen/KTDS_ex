@@ -1,0 +1,17 @@
+package sample_application;
+
+public class WhileSyntax {
+
+	public static void main(String[] args) {
+		
+		int count = 0;
+		
+		while( count <10) {
+			System.out.println("반복중입니다");
+			count++;
+			if(count ==6)
+		}
+		System.out.println("------------------------------------------");
+		System.out.println("종료합니다");
+	}
+}

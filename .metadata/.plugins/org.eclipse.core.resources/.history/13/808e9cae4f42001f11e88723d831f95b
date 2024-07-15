@@ -1,0 +1,11 @@
+package sample_application;
+
+public class SubjectExam {
+
+	public static void main(String[] args) {
+	
+		int korScore = 90;
+
+		}
+
+}
