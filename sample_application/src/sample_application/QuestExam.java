@@ -21,6 +21,7 @@ public class QuestExam {
 		System.out.print("내가 가지고 있는 돈은? : ");
 		int money = sc.nextInt();
 		System.out.println("영화가격은 " + price + " 입니다");
+		
 		if(money >= price) {
 			System.out.println("영화관람이 '가능' 합니다 남은 금액은 '" + (money-price) + "'입니다");			
 		}else {
@@ -35,21 +36,25 @@ public class QuestExam {
 		만약, -1을 입력했다면, 구구단 출력 프로그램을 종료해야합니다.
 		*/
 		System.out.println("무한 구구단을 시작합니다");
+		
 		while(true) {
 		System.out.print("굼금한 숫자를 입력하세요 :");
 		int num = sc.nextInt();
 		
-		for(int i =1 ; i <=9 ; i++) {
+			for(int i =1 ; i <=9 ; i++) {
 			System.out.println(num + " X " + i + " = " +  (num*i));
-		}//for
+			}//for
+		
 		System.out.println("1.게속할려면 1 \n2.끝내기는 -1을 입력해주세요 ");
 		System.out.print("게임을 더 하시겠습니까? :");
-		int end = sc.nextInt();
-		if(end == -1) {
+			int end = sc.nextInt();
+		
+			if(end == -1) {
 			break;
-		}//if
+			}//if
 		
 		}//while
+		
 		System.out.println("게임을 종료합니다");
 		System.out.println("----------------------------------------------------------------------------------");
 		
@@ -72,6 +77,7 @@ public class QuestExam {
 			num2 +=2;
 			System.out.println();
 		}//for
+		
 		System.out.println("----------------------------------------------------------------------------------");
 		/*
 		 * 이 코드는 가운데 정렬한 삼각형의 모양이 출력이 될수있게 만들어진 코드입니다
