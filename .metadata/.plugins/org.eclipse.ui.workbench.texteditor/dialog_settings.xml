@@ -10,6 +10,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="-"/>
 		<list key="findhistory">
+			<item value="&quot;합계 : &quot; + this.sum"/>
 			<item value="^\s*\n"/>
 			<item value="+"/>
 		</list>

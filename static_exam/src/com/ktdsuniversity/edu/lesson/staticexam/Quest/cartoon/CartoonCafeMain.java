@@ -23,10 +23,10 @@ public class CartoonCafeMain {
 	
 	public static void main(String[] args) {
 		
-		Cartoon basketBall = new Cartoon("슬램덩크", true, 1000);
-		Cartoon jjangGu = new Cartoon("짱구", true, 1000);
-		Cartoon parasyte = new Cartoon("기생수", false, 2000);
-		Cartoon mindFamily = new Cartoon("마음의소리", true, 500);
+		Cartoon basketBall = new Cartoon("슬램덩크", true);
+		Cartoon jjangGu = new Cartoon("짱구", true);
+		Cartoon parasyte = new Cartoon("기생수", false);
+		Cartoon mindFamily = new Cartoon("마음의소리", true);
 		
 		CartoonCafe books = new CartoonCafe(basketBall, jjangGu, parasyte, mindFamily);
 		CartoonCafe wallet = new CartoonCafe(MONEY);
@@ -37,6 +37,8 @@ public class CartoonCafeMain {
 		books.rental(parasyte, wallet);
 		
 		
+		
+		
 		System.out.println("만화책 이름 : \t" + basketBall.getTitle() + "\t" +jjangGu.getTitle() + "\t" + 
 		parasyte.getTitle() + "\t" + mindFamily.getTitle());
 		System.out.println("대여상태 : \t" 
@@ -44,8 +46,8 @@ public class CartoonCafeMain {
                 + (jjangGu.isHasBook() ? "대여 중" : "대여 가능") + "\t" 
                 + (parasyte.isHasBook() ? "대여 중" : "대여 가능") + "\t" 
                 + (mindFamily.isHasBook() ? "대여 중" : "대여 가능"));
-		System.out.println("만화책 대여비 : \t" + basketBall.getCost() + "\t" +jjangGu.getCost() + "\t" + 
-				parasyte.getCost() + "\t" + mindFamily.getCost());
+		System.out.println("만화책 대여비 : \t" + basketBall.getCOST() + "\t" +jjangGu.getCOST() + "\t" + 
+				parasyte.getCOST() + "\t" + mindFamily.getCOST());
 		System.out.println("현재 보유 금고금액: " + wallet.getWallet());
 	}
 	

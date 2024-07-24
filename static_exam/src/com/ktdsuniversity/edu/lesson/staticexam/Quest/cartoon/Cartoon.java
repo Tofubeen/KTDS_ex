@@ -19,17 +19,17 @@ package com.ktdsuniversity.edu.lesson.staticexam.Quest.cartoon;
 public class Cartoon {
 	
 	
+	public static final int COST = 1500;
+	
 	private String title;
 	private boolean hasBook;
-	private int cost;
 	
 	
 	
-	public Cartoon(String title, boolean hasBook, int cost) {
+	public Cartoon(String title, boolean hasBook) {
 		super();
 		this.title = title;
 		this.hasBook = hasBook;
-		this.cost = cost;
 		
 	}
 	
@@ -56,15 +56,15 @@ public class Cartoon {
 	}
 
 
-	public int getCost() {
-		return cost;
+
+
+	public int getCOST() {
+		return COST;
 	}
 
 
-	public void setCost(int cost) {
-		this.cost = cost;
-	}
-
+	
+	
 
 	
 	

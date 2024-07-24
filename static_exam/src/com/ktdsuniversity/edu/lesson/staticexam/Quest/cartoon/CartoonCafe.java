@@ -31,14 +31,14 @@ public class CartoonCafe {
 		this.family = family;
 	}
 
-	public CartoonCafe(int wallet) {
+	public CartoonCafe(int wallet) { //카페금고 생성자
 		this.wallet = wallet;
 	}
 
-	public void rental(Cartoon comics , CartoonCafe wallet) {
+	public void rental(Cartoon comics , CartoonCafe wallet) {//도서 대여 메소드
 		if (comics.isHasBook()) {
 			comics.setHasBook(false);
-			wallet.setWallet(wallet.getWallet() + comics.getCost());
+			wallet.setWallet(wallet.getWallet() + comics.getCOST());
 			System.out.println(comics.getTitle() + " 가 대여되었습니다");
 		} else {
 			System.out.println("도서에 재고가 없습니다.");
@@ -46,7 +46,6 @@ public class CartoonCafe {
 
 	}
 
-	
 	
 	
 	public Cartoon getSport() {

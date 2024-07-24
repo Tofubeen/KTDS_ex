@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.ScopedValue"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="ConstructorTest"/>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="CoffeeShopMain"/>
     <fullyQualifiedTypeName name="CoffeeShop"/>
     <fullyQualifiedTypeName name="franchise.Coffee"/>
@@ -13,6 +8,29 @@
     <fullyQualifiedTypeName name="franchise.Product"/>
     <fullyQualifiedTypeName name="franchise.Goods"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="franchise.QuestProduct"/>
+    <fullyQualifiedTypeName name="franchise.Seller"/>
+    <fullyQualifiedTypeName name="franchise.Buyer"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
+    <fullyQualifiedTypeName name="com.naver.bbs.management.Ariticle"/>
+    <fullyQualifiedTypeName name="com.naver.member.management.Member"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.lesson.staticexam.Car"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.lesson.staticexam.Quest.cartoon.CartoonCafe"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.lesson.staticexam.Quest.cartoon.Cartoon"/>
+    <fullyQualifiedTypeName name="java.lang.ScopedValue"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.game.GameInfo"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.game.quest.FirstGameInfo"/>
+    <fullyQualifiedTypeName name="int"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.array.Animal"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.array.Student"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.array.quest.Seller"/>
+    <fullyQualifiedTypeName name="com.ktdsuniversity.edu.array.quest.Product"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
