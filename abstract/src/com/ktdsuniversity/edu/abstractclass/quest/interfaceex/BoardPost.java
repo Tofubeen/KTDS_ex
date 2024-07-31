@@ -1,6 +1,6 @@
 package com.ktdsuniversity.edu.abstractclass.quest.interfaceex;
 
-public interface BoardPostInterface {
+public interface BoardPost {
 
 	void createPost(String title, String author, String content);
     void displayAllPosts();

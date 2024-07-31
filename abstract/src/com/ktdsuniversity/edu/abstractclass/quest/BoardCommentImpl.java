@@ -2,22 +2,22 @@ package com.ktdsuniversity.edu.abstractclass.quest;
 
 import java.util.Date;
 
-public class BoardComment {
+import com.ktdsuniversity.edu.abstractclass.quest.interfaceex.BoardComment;
+
+public class BoardCommentImpl implements BoardComment{
 
 	protected int commentNumber; // 댓글 번호
     protected String content; // 내용 
     protected String author; // 작성장
     protected Date date; // 날짜
 
-    public BoardComment(int commentNumber, String content, String author) {
+    public BoardCommentImpl(int commentNumber, String content, String author) {
         this.commentNumber = commentNumber;
         this.content = content;
         this.author = author;
         this.date = new Date();
     }
 
-    
-    
     
     
     public int getCommentNumber() {
@@ -54,6 +54,14 @@ public class BoardComment {
 
 	@Override
     public String toString() {
-        return "Comment Number: " + commentNumber + "\nContent: " + content + "\nAuthor: " + author + "\nDate: " + date;
+        return "댓글번호: " + commentNumber + "\n내용: " + content + "\n작성자: " + author + "\n날짜: " + date;
     }
+
+
+
+	@Override
+	public void addComment(int postNumber, String commentAuthor, String commentContent) {
+		// TODO Auto-generated method stub
+		
+	}
 }

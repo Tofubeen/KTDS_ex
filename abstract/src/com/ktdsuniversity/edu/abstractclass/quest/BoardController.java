@@ -1,21 +1,15 @@
 package com.ktdsuniversity.edu.abstractclass.quest;
 
-import java.util.Date;
-import java.util.Scanner;
 
+import com.ktdsuniversity.edu.abstractclass.quest.interfaceex.BoardComment;
 import com.ktdsuniversity.edu.abstractclass.quest.interfaceex.BoardInterface;
 
 
-public class Board{
+
+public class BoardController{
 	
 	
-	public void menu() {
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("게시판 입니다 메뉴를 선택해주세요");
-		System.out.println("--------------------------------------------");
-		
-	}
+	
 	
 	
 	
@@ -26,7 +20,7 @@ public class Board{
     	
     	BoardInterface board = new BoardInterface() { //BoardInterface 의 인스턴스 생성하며 익명클래스 작성
     		
-            BoardPost[] posts = new BoardPost[10]; // post 갯수
+            BoardPostImpl[] posts = new BoardPostImpl[10]; // post 갯수
             int postCount = 0; // 게시글 갯수
 
             @Override
@@ -41,13 +35,13 @@ public class Board{
                     return;
                 }
 
-                posts[postCount] = new BoardPost(postCount, title, author, content); 
+                posts[postCount] = new BoardPostImpl(postCount, title, author, content); 
                 postCount++; // 게시글 번호 자동추가
             }
 
             @Override
             public void displayAllPosts() { 
-                for (BoardPost post : posts) {
+                for (BoardPostImpl post : posts) {
                     if (post != null && !post.isDeleted) {
                         int commentCount = 0;
                         for (BoardComment comment : post.comments) {
@@ -67,7 +61,7 @@ public class Board{
                     return;
                 }
 
-                BoardPost post = posts[postNumber];
+                BoardPostImpl post = posts[postNumber];
                 post.views++;
                 System.out.println(post);
 
@@ -85,7 +79,7 @@ public class Board{
                     return;
                 }
 
-                BoardPost post = posts[postNumber];
+                BoardPostImpl post = posts[postNumber];
                 post.title = title;
                 post.author = author;
                 post.content = content;
@@ -101,7 +95,7 @@ public class Board{
             @Override
             public int getPostCount() {
                 int count = 0;
-                for (BoardPost post : posts) {
+                for (BoardPostImpl post : posts) {
                     if (post != null && !post.isDeleted) {
                         count++;
                     }
@@ -116,10 +110,10 @@ public class Board{
                     return;
                 }
 
-                BoardPost post = posts[postNumber];
+                BoardPostImpl post = posts[postNumber];
                 for (int i = 0; i < post.comments.length; i++) {
                     if (post.comments[i] == null) {
-                        post.comments[i] = new BoardComment(i, commentContent, commentAuthor);
+                        post.comments[i] = new BoardCommentImpl(i, commentContent, commentAuthor);
                         return;
                     }
                 }
@@ -131,15 +125,13 @@ public class Board{
         
         
         
+        
+        
+        
+        
+        
         board.createPost("제목", "kim", "첫번째 글");
         board.createPost("2", "Park", "두번째 글");
-//        board.addComment(0, "Charlie", "First comment on first post");
-//        board.addComment(0, "Dave", "Second comment on first post");
-//        board.displayAllPosts();
-//        board.displayPost(0);
-//        board.updatePost(0, "Updated First Post", "Alice", "Updated content for the first post");
-//        board.displayPost(0);
-//        board.deletePost(0);
         board.displayPost(0);
         System.out.println("총 게시물 갯수: " + board.getPostCount());
     }

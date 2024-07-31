@@ -35,15 +35,17 @@ public class Bar {
 	
 	
 	public Bar() {
-		
 		this.drinks = new Drink[4]; // 생성자 선언시 음료가 들어간 배열이 생성됩니다 
 		this.alcoholCount = 0;
-		drinks[0] =  new Sodas("펩시라임", "제로탄산" , 1000);
-		drinks[1] = new Sodas("코카콜라", "탄산음료" , 1500);
-		drinks[2] = new Alcohols("진로", "소주",6000);
-		drinks[3] = new Alcohols("테라", "맥주" , 5000);
+		if(drinks != null) {
+			
 		
+			drinks[0] =  new Sodas("펩시라임", "제로탄산" , 1000);
+			drinks[1] = new Sodas("코카콜라", "탄산음료" , 1500);
+			drinks[2] = new Alcohols("진로", "소주",6000);
+			drinks[3] = new Alcohols("테라", "맥주" , 5000);
 		
+		}
 	}
 	
 	public int getWallet() {
@@ -64,26 +66,29 @@ public class Bar {
 		Scanner sc = new Scanner(System.in);
 		Random ran = new Random();
 			 
-			if(drinks[choice] instanceof Alcohols) {
-				System.out.println("신분증 좀 보여주세요");
-				int age = sc.nextInt();
-				
-				if(age >= 20) {
-					this.wallet += drinks[choice].getCost();
-					this.alcoholCount += 1;
-					System.out.println("여깃습니당 맛있게 드세요~");
-					System.out.println("----------------------------------------");
-
+			if(drinks != null && drinks[choice] != null) {
+				if(drinks[choice] instanceof Alcohols) {
+					
+					System.out.println("신분증 좀 보여주세요");
+					int age = sc.nextInt();
+					
+					if(age >= 20) {
+						this.wallet += drinks[choice].getCost();
+						this.alcoholCount += 1;
+						System.out.println("여깃습니당 맛있게 드세요~");
+						System.out.println("----------------------------------------");
+	
+					}else {
+						System.out.println("나가세요");
+						System.exit(1);
+					}//신분증검사
+					
 				}else {
-					System.out.println("나가세요");
-					System.exit(1);
-				}//신분증검사
-				
-			}else {
-				this.wallet += drinks[choice].getCost();
-				System.out.println("주문하신 음료 나왔습니다 맛있게 드세요~");
-				System.out.println("----------------------------------------");
-
+					this.wallet += drinks[choice].getCost();
+					System.out.println("주문하신 음료 나왔습니다 맛있게 드세요~");
+					System.out.println("----------------------------------------");
+	
+				}
 			}
 			
 		}
